@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./senac.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+        <!-- Começo do topo da pagina e simulação de login de usuario -->
+    <header class="topo">
+        <h1>Sobre o Aluno</h1>
+        <img class="img" src="usuario.png" alt="Usuario" width="100px">       
+        <div class="log">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" class="nome"> <br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" class="senha"> <br>
+            <input type="button" value="Login" class="botao" onclick="logar()">
+        </div>
+        <div class="muda">
+        <input type="button" value="Logout" class="botaob" onclick="sair()">
+        </div>
+    </header>
+         <!-- Fim do topo da pagina e simulação de login de usuario -->
+
+        <!-- Começo do conteúdo da pagina dividida em duas colunas -->
+    <section>
+
+        <!-- Primeira coluna -->
+        <div class="info"> 
+            <h3>Informações pessoais</h3>
+            <ul>
+                <li><strong>Idade: </strong>26 anos</li>
+                <li><strong>Estado: </strong>Paraná</li>
+                <li><strong>Profissão: </strong>Dev</li>
+            </ul>
+            <br>
+            <h3>Interesses</h3>
+                <ul>
+                    <li>Tecnologia</li>
+                    <li>linguas</li>
+                    <li>viagens</li>
+                </ul>
+        </div>
+
+        <!-- Segunda coluna -->
+        <div class="info2"> 
+            <h3>Biografia</h3>
+            <p>Estudante de Analise e desenvolvimento de sistema da faculade SENAC - Portão do segundo periodo.</p>
+            <div class="imag" ><a href="https://www.senacpr.com/cursos-do-senac-portao-curitiba-pr-2019/"><img src="./senac.png" alt="SENAC" width="100px"></a></div>
+            <div class="form">
+                <form action="input"><label for="nome2">Nome:</label>
+                <input type="text" name="nome2" class="nometxt">
+                <br>
+                <label for="tel">Celular:</label>
+                <input type="tel" name="tel" class="cel">
+                <br>
+                <label for="email2">E-mail:</label>
+                <input type="email" name="email2" class="ema">
+                <br>
+
+               <div class="area"> <textarea name="texto" class="textc" cols="20" rows="6">Escreva aqui sua mensagem</textarea></div>
+                <br>
+                <input type="submit" value="Enviar" class="env">
+            </form>
+            </div>
+        </div>
+    </section>
+    <!-- Fim do conteúdo da pagina dividida em duas colunas -->
+
+    <!-- Começo da parte de contato reservada no fim da pagina -->
+    <footer>
+        <h2>Contato</h2>
+        <div class="txtfin">
+            <p class="ctt1"><strong>Email: </strong><a href="https://gmail.com">exemplo@exemplo.com</a>
+            </p>
+
+            <p class="ctt2"><strong>LinkedIn: </strong><br>
+                <a href="https://br.linkedin.com/">Pagina LinkedIn</a></p>
+
+            <p class="ctt3"><strong>Twitter (X): </strong><br>
+                <a href="https://twitter.com/">Pagina do Twitter</a></p>
+        </div>
+        <div class="fim">
+            &copy; 2024 Página do aluno
+        </div>
+    </footer>
+    <!-- Fim da parte de contato reservada no fim da pagina -->
+
+    <script src="script.js"></script> <!-- Importação do JS -->
+</body>
+</html>

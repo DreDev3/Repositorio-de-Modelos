@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Começo do estilo do topo da pagina */
+
+header {
+    background: linear-gradient(45deg, black, rgb(27, 27, 27), black);
+    background-repeat: no-repeat;
+    color: white;
+    width: 98.8vw;
+    height: 250px;
+}
+
+.img {
+    /*background: white;*/
+    border-radius: 50%;
+    margin-left: 47vw;
+    margin-top: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.log {text-align: center;
+    margin-top: 20px;
+}
+
+.nome {
+    width: 150px;
+    border-radius: 10px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.26);
+    color: white;
+    text-indent: 8px;
+}
+
+.senha {
+    width: 150px;
+    border-radius: 10px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.26);
+    color: white;
+    text-indent: 8px;
+
+}
+
+.botao {
+    width:60px;
+    padding:2px;
+    border-radius: 10px;
+    border: 0;
+    font: bold 10pt sans-serif;
+    margin-right: -40px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.botaob {
+
+    width:60px;
+    padding:2px;
+    border-radius: 10px;
+    border: 0;
+    font: bold 10pt sans-serif;
+    cursor: pointer;
+}
+
+.muda {
+    display: none;
+    margin-left: 48%;
+}
+
+/* Fim do estilo do topo da pagina */
+
+/* Começo do estilo da parte do conteúdo */
+
+section {
+    width: 98.8vw;
+    height: 90vh;
+    background: linear-gradient(45deg, black, rgb(27, 27, 27), black);
+    color: white;
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h3 {
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-left: 8px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.imag {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Coluna da esquerdac info */
+
+.info {
+    display: none;
+    width: 48%;
+    height: 98%;
+    background: rgba(255, 255, 255, 0.055);
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 5px;  
+}
+
+/* Coluna da direita info2 */
+
+.info2 {
+    display: none;
+    width:48%;
+    height: 98%;
+    background: rgba(255, 255, 255, 0.055);
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.form {
+    width: 48%;
+    padding: 20px;
+    margin:15% 35%;
+}
+
+.area {
+    margin: 0 18%;
+}
+
+.nometxt {
+    width: 150px;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 8px;
+    background: rgba(255, 255, 255, 0.26);
+    color: white;
+    text-indent: 8px;
+}
+
+.cel {
+    width: 150px;
+    border-radius: 10px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.26);
+    color: white;
+    text-indent: 8px;
+}
+
+.ema {
+    width: 150px;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 4px;
+    background: rgba(255, 255, 255, 0.26);
+    color: white;
+    text-indent: 8px;
+}
+
+.textc {
+    width: 150px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.26);
+    color: white;
+    text-indent: 8px;
+}
+
+.env {
+    width:60px;
+    padding:2px;
+    border-radius: 10px;
+    border: 0;
+    font: bold 10pt sans-serif;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+/* Fim do estilo da parte do conteúdo */
+
+footer {
+    background: linear-gradient(45deg, black, rgb(27, 27, 27), black);
+    background-repeat: no-repeat;
+    color: white;
+    width: 98.8vw;
+    height: 200px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.txtfin {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.082);
+    padding: 12px;
+    width: 95%;
+    height: 128px;
+    margin-left: 1.5%;
+    border-radius: 20px;
+}
+
+.ctt1 {
+    text-align: left;
+    padding: 10px;
+    width: 32vw;
+    background: rgba(0, 0, 0, 0.411);
+    border-radius: 20px;
+}
+
+.ctt2 {
+    text-align: left;
+    padding: 10px;
+    width: 32vw;
+    background: rgba(0, 0, 0, 0.411);
+    border-radius: 20px;
+}
+
+.ctt3 {
+    text-align: left;
+    padding: 10px;
+    width: 32vw;
+    background: rgba(0, 0, 0, 0.411);
+    border-radius: 20px;
+}
+
+.fim {
+    margin-top:2px;
+    padding: 8px;
+    background: black;
+}
