@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Mustang;
+    src: url(./font/AbadiMT-Bold.ttf);
+}
+
+header {
+    display: flex;
+    position: relative;
+    width: 99.9%;
+    height: 100vh;
+}
+
+
+.relogio {
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.103);
+    color: #5E6BFF;
+    font: bold 12pt sans-serif;
+}
+
+.alinhar-direita {
+    right: 0;
+}
+
+.mustl {
+    width: 110%;
+    margin-top: 110px;
+}
+
+
+.car1 {
+    width: 40%;
+    text-align: center;
+
+}
+
+.titulo {
+    width: 20%;
+    font: bold 60pt Mustang;
+    text-transform: uppercase;
+    margin-top: 20px;
+    position: absolute;
+
+}
+
+.musta {
+    width: 110%;
+    margin-top: 120px;
+    margin-left: 40%;
+}
+
+
+.car2 {
+    width: 40%;
+    text-align: center;
+}
+
+section {
+    width: 99.9%;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    padding: 4px;
+    font:bold 16pt sans-serif;
+    text-transform: uppercase;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.maincont {
+    display: flex;
+    height: 94.5vh;
+
+}
+
+.ladoa {
+    width: 60%;
+    max-height: 100%;
+    padding: 6px;
+    font: 16pt sans-serif;
+    overflow: auto;
+}
+
+.ladoa strong {
+    font-size: 18pt;
+}
+
+.ladob {
+    width: 40%;
+    padding: 6px;
+}
+
+.ladob img {
+    width: 100%;
+    margin-top: -65px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font: 12pt sans-serif;
+    padding: 8px;
+}
