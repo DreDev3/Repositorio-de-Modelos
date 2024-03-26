@@ -51,6 +51,7 @@ header {
     writing-mode: vertical-lr;*/
     text-align: center;
     margin-top: 150px;
+    margin-left: -15px;
 }
 
 .titulo span {
@@ -60,9 +61,7 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-.carca {
-    margin-top: 20px;
-}
+
 
 .musta {
     width: 110%;
@@ -98,30 +97,72 @@ section {
 
 .maincont {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 99vw;
     height: 94.5vh;
+    justify-content: space-around;
+    overflow: scroll;
 
 }
 
-.ladoa {
-    width: 60%;
-    max-height: 100%;
-    padding: 6px;
-    font: 16pt sans-serif;
-    overflow: auto;
+.cat1 {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid grey;
 }
 
-.ladoa strong {
-    font-size: 18pt;
-}
-
-.ladob {
-    width: 40%;
-    padding: 6px;
-}
-
-.ladob img {
+.cat1 .image img {
     width: 100%;
-    margin-top: -65px;
+}
+
+.cat1 .nomepro {
+    font: bold 12pt Mustang;
+    text-align: center;
+}
+
+.cat1 .preco {
+    padding: 10px;
+    margin-top: 10px;
+    background: #00000065;
+    color:#1223df;
+    font: bold 12pt Mustang;
+    display: flex;
+}
+
+.cat1 .valor {
+    margin-left: 10px;
+    color: #000;
+}
+
+.cat2 {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid grey;
+}
+
+.cat2 .image img {
+    width: 100%;
+}
+
+.cat2 .nomepro {
+    font: bold 12pt Mustang;
+    text-align: center;
+}
+
+.cat2 .preco {
+    padding: 10px;
+    margin-top: 5px;
+    background: #00000065;
+    color:#1223df;
+    font: bold 12pt Mustang;
+    display: flex;
+}
+
+.cat2 .valor {
+    margin-left: 10px;
+    color: #000;
 }
 
 footer {

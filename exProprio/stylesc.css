@@ -51,6 +51,7 @@ header {
     writing-mode: vertical-lr;*/
     text-align: center;
     margin-top: 150px;
+    margin-left: -15px;
 }
 
 .titulo span {
@@ -60,9 +61,7 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-.carca {
-    margin-top: 20px;
-}
+
 
 .musta {
     width: 110%;
@@ -99,29 +98,54 @@ section {
 .maincont {
     display: flex;
     height: 94.5vh;
+    overflow: hidden;
 
 }
-
 .ladoa {
-    width: 60%;
-    max-height: 100%;
-    padding: 6px;
-    font: 16pt sans-serif;
-    overflow: auto;
-}
-
-.ladoa strong {
-    font-size: 18pt;
-}
-
-.ladob {
     width: 40%;
     padding: 6px;
 }
 
-.ladob img {
+.ladoa img {
     width: 100%;
-    margin-top: -65px;
+    margin-top: -10%;
+}
+
+.ladob {
+    width: 60%;
+    max-height: 100%;
+    padding: 6px;
+    font: 16pt Mustang;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.social {
+    width: 98.8%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.social a {
+    margin: 10%;
+    text-decoration: none;
+    background-color: #0000008a;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social .insta {
+    background: linear-gradient(90deg,#fac000, #ff5100, #ff0000, #ff00ff, #560277d3);
+    color: white;
+    font:bold 16pt Mustang;
+}
+
+.social .face {
+    background: #161688;
+    color: white;
+    font:bold 16pt;
 }
 
 footer {
