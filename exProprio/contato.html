@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -42,9 +42,13 @@
                 <img src="./imagens/Mustang GT 2017 - Vermelho.png" alt="">
             </div>
             <div class="ladob">
-                <form>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
+                <form id="contactForm">
+                    <div><label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required></div>
+                    <div><label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email"></div>
+                    <div><textarea name="boxtxt" id="txtarea" cols="30" rows="10"></textarea></div>
+                <button  type="button" onclick="enviar()" class="bota">Enviar</button>
                 </form>
                 <div class="social">
                     <p><strong>Nossas redes sociais</strong></p>
@@ -59,6 +63,7 @@
     <footer>
         &copy; 2024 Mustang Car
     </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 
