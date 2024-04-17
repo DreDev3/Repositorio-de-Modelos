@@ -102,7 +102,6 @@ section {
     height: 94.5vh;
     justify-content: space-around;
     overflow: scroll;
-
 }
 
 .cat1 {
@@ -114,6 +113,10 @@ section {
 
 .cat1 .image img {
     width: 100%;
+}
+
+.cat1:hover {
+    width: 180px;
 }
 
 .cat1 .nomepro {
@@ -140,6 +143,10 @@ section {
     height: 200px;
     margin: 10px;
     border: 1px solid grey;
+}
+
+.cat2:hover {
+    width: 180px;
 }
 
 .cat2 .image img {

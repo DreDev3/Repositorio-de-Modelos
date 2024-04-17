@@ -1,0 +1,277 @@
+body {
+    background-color: #000;
+    height: 150vh;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    width: 640px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    gap: 100px;
+}
+
+#scroll-left,
+#scroll-right {
+    position: absolute;
+    margin-top: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #000;
+    font: bold 12pt sans-serif;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scroll-left {
+    left: 0;
+}
+
+#scroll-right {
+    right: 0;
+}
+
+.story {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+    width: 640px;
+    height: 100px;
+    /* overflow-x: auto; */
+    overflow-y: hidden;
+}
+
+
+.story img {
+    width: 60px;
+    border: 2.8px solid red;
+    border-radius: 50%;
+}
+
+.nomeus {
+    width: 70px;
+    height: 20px;
+    color: #fff;
+    font: normal 9pt sans-serif;
+    text-wrap: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Começo Menu lateral */
+.barlat {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #222222c2;
+    padding: 10px;
+}
+
+.barlat a {
+    color: #fff;
+    text-decoration: none;
+    font: normal 11.5pt sans-serif;
+    line-height: 55px;
+}
+
+
+.barlat img {
+    width: 22px;
+    margin-right: 15px;
+}
+
+
+.logo {
+    margin-top: -28px;
+}
+
+.logo img {
+    width: 102px;
+    padding: 32px 6px;
+}
+
+.home,
+.home a {
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+.home,
+.pesq,
+.exp,
+.reel,
+.msg,
+.notif,
+.criar,
+.perfil,
+.mais {
+    padding-left: 10px;
+}
+
+.home:hover,
+.pesq:hover,
+.exp:hover,
+.reel:hover,
+.msg:hover,
+.notif:hover,
+.criar:hover,
+.perfil:hover,
+.mais:hover {
+    width: 90%;
+    background-color: #22222200;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.mais {
+    margin-top: 12px;
+    padding-left: 10px;
+}
+
+/* Fim Menu lateral */
+
+.cont {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.post {
+    width: 540px;
+    height: 820px;
+    border-bottom: 1px solid #222222b2;
+    margin: 150px 0;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 540px;
+    height: 70px;
+    color: #fff;
+}
+
+.nomeperf {
+    width: 80px;
+    margin-top: 8px;
+    font: bold 10pt sans-serif;
+}
+
+.infomed {
+    font: normal 8pt sans-serif;
+}
+
+.ftperf img {
+    width: 40px;
+}
+
+.confpost {
+    width: 15px;
+    margin: auto;
+    margin-right: 4px;
+    color: #fff;
+    font-size: 22pt;
+    cursor: pointer;
+}
+
+.postagem {
+    width: 540px;
+    height: 575px;
+    border: 0.5px solid #22222262;
+}
+
+.postagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.boxls {
+    display: flex;
+}
+
+.licmcp {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+}
+
+.licmcp img {
+    width: 25px;
+    height: 25px;
+}
+
+.salva {
+    margin: auto;
+    margin-top: 12px;
+    margin-right: 0;
+}
+
+.salva img {
+    width: 25px;
+
+}
+
+.curtida {
+    width: 86px;
+    margin-top: 8px;
+    color: #fff;
+    font: bold 10.5pt sans-serif;
+    cursor: pointer;
+}
+
+.descricao {
+    display: flex;
+    color: #fff;
+}
+
+.desc {
+    font: normal 10pt sans-serif;
+    margin-top: 8px;
+}
+
+.comentario {
+    color: #696969;
+    font: normal 10pt sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.post input {
+    width: 92%;
+    margin-top: 20px;
+    background-color: #000;
+    font: normal 10.5pt sans-serif;
+    border: 0;
+}
+
+.cont2 {
+    margin-top: -280px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.sugest {
+    width: 280px;
+    height: 85vh;
+    color: #fff;
+    border: 0.5px solid #22222262;
+}
