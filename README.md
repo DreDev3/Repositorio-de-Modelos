@@ -1,3 +1,4 @@
-![image](https://github.com/DreDev3/Repositorio-de-Modelos/assets/162820365/c45fba37-d880-4ef9-b74f-e7003903ca6b)
+![image](https://github.com/DreDev3/Repositorio-de-Modelos/assets/162820365/d1021c70-cdd3-44c4-9439-60db79687db6)
+
 
 Modelo de pagina do instagram web criado com html e css, com algumas funcionalidades de botões com javascript. 
