@@ -1,81 +1,78 @@
 body {
     background-color: #000;
     height: 150vh;
+    margin: 0;
 }
 
-header {
-    position: relative;
-    display: flex;
-    justify-content: center;
+/* Opções de postagem */
+
+.windowcenter {
+    z-index: 2;
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    background-color: #000000af;
 }
 
-.botao {
-    width: 640px;
+.windowoption {
+    margin: 10% 35%;
+    width: 400px;
+    height: 350px;
+    background-color: #272727;
     position: absolute;
-    z-index: 1;
-    display: flex;
-    gap: 100px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 49px;
 }
 
-#scroll-left,
-#scroll-right {
-    position: absolute;
-    margin-top: 25px;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    color: #000;
-    font: bold 12pt sans-serif;
-    border: none;
-    border-radius: 50%;
+ul {
+    margin: 0 -40px;
+}
+
+li {
+    width: 400px;
+    border-bottom: 1px solid #3a3a3a;
+    list-style: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 10.8pt;
     cursor: pointer;
 }
 
-#scroll-left {
-    left: 0;
+.denunciar {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 11pt;
+    color: #cc3838;
 }
 
-#scroll-right {
-    right: 0;
+.cancel {
+    border: none;
 }
 
-.story {
-    position: absolute;
+/* [FIM] Opções de postagem */
+
+.page {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 18px;
-    width: 640px;
-    height: 100px;
-    /* overflow-x: auto; */
-    overflow-y: hidden;
+    flex-direction: row;
 }
 
-
-.story img {
-    width: 60px;
-    border: 2.8px solid red;
-    border-radius: 50%;
-}
-
-.nomeus {
-    width: 70px;
-    height: 20px;
-    color: #fff;
-    font: normal 9pt sans-serif;
-    text-wrap: nowrap;
-    text-align: center;
-    overflow: hidden;
-}
 
 /* Começo Menu lateral */
+
 .barlat {
+    flex: 0.7;
     width: 220px;
     height: 100vh;
     position: fixed;
     border-right: 1px solid #222222c2;
     padding: 10px;
 }
+
 
 .barlat a {
     color: #fff;
@@ -84,20 +81,22 @@ header {
     line-height: 55px;
 }
 
-
 .barlat img {
     width: 22px;
     margin-right: 15px;
 }
 
-
 .logo {
-    margin-top: -28px;
+    margin-top: -2px;
 }
 
 .logo img {
     width: 102px;
     padding: 32px 6px;
+}
+
+.logo2{
+    display: none;
 }
 
 .home,
@@ -127,20 +126,115 @@ header {
 .criar:hover,
 .perfil:hover,
 .mais:hover {
-    width: 90%;
-    background-color: #22222200;
+    width: 95%;
+    background-color: #22222281;
     border-radius: 6px;
     cursor: pointer;
 }
 
-.mais {
-    margin-top: 12px;
-    padding-left: 10px;
-}
 
 /* Fim Menu lateral */
+main{
+    margin-left: 242px;
+    flex: 2.6;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container {
+    width: 660px;
+    height: 100px;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    border: 1px solid black;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.story {
+    width: 660px;
+    height: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.story img {
+    width: 58px;
+    border: 2.5px solid black;
+    border-radius: 50%;
+    margin: -2px;
+}
+
+.image {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.image::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom left, #8c00ff, #ff00bf, yellow);
+    z-index: -1;
+    margin: -4px;
+    border-radius: 50%;
+
+}
+.scrollButton {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    border: none;
+    border-radius: 50%;
+}
+
+#scrollLeftButton, #scrollRightButton {
+    margin: 0 30px 0 30px;
+}
+
+.bot {
+    width: 660px;
+    position: fixed;
+    top: 60px;
+    display: flex;
+    
+}
+
+.sperf {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+.nomeus {
+    width: 70px;
+    height: 20px;
+    color: #fff;
+    font: normal 8pt sans-serif;
+    text-wrap: nowrap;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 6px;
+}
 
 .cont {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cont2 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -150,7 +244,6 @@ header {
     width: 540px;
     height: 820px;
     border-bottom: 1px solid #222222b2;
-    margin: 150px 0;
 }
 
 .cabecalho {
@@ -174,6 +267,25 @@ header {
 
 .ftperf img {
     width: 40px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: -2px;
+}
+
+.ftperf {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.ftperf::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom left, #8c00ff, #ff00bf, yellow);
+    z-index: -1;
+    margin: -4px;
+    border-radius: 50%;
 }
 
 .confpost {
@@ -185,10 +297,13 @@ header {
     cursor: pointer;
 }
 
+
+
 .postagem {
     width: 540px;
     height: 575px;
-    border: 0.5px solid #22222262;
+    border: 1.8px solid #313131;
+    border-radius: 3px;
 }
 
 .postagem img {
@@ -209,12 +324,14 @@ header {
 .licmcp img {
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 .salva {
     margin: auto;
     margin-top: 12px;
     margin-right: 0;
+    cursor: pointer;
 }
 
 .salva img {
@@ -235,6 +352,10 @@ header {
     color: #fff;
 }
 
+.nomeperf {
+    cursor: pointer;
+}
+
 .desc {
     font: normal 10pt sans-serif;
     margin-top: 8px;
@@ -247,6 +368,12 @@ header {
     cursor: pointer;
 }
 
+#txtcom {
+    border: none;
+    color: #ffffffa2;
+    font: normal 10pt sans-serif;
+}
+
 .post input {
     width: 92%;
     margin-top: 20px;
@@ -255,23 +382,150 @@ header {
     border: 0;
 }
 
-.cont2 {
-    margin-top: -280px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
 
-footer {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+.sugestao {
+    flex: 1;
 }
 
 .sugest {
     width: 280px;
-    height: 85vh;
+    height: 70vh;
     color: #fff;
-    border: 0.5px solid #22222262;
+}
+
+.profile {
+    display: flex;
+    margin-top: 30px;
+    font: bold 10pt sans-serif;
+}
+
+.nomeperf2 {
+    margin: 15px 18px;
+    cursor: pointer;
+}
+
+.nomeperf3 {
+    min-width: 100px;
+    margin: 15px 0 0 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.subnome {
+    color: #8b8b8b;
+    font: normal 10pt sans-serif;
+    margin: 35px -92px;
+}
+
+.subnome2 {
+    color: #8b8b8b;
+    font: normal 10pt sans-serif;
+    margin: 36px -100px;
+}
+
+.ownprofile img{
+    width: 55px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: -2px;
+}
+
+.ownprofile {
+    width: 55px;
+    height: 55px;
+    position: relative;
+}
+
+.ownprofile::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background: #5e5e5e;
+    z-index: -1;
+    margin: -3px;
+    border-radius: 50%;
+}
+
+.sugestprofile {
+    width: 55px;
+    padding: 10px;
+    position: relative;
+}
+
+.ownprofile1 {
+    width: 45px;
+    border: 2.8px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mudar {
+    height: 20px;
+    color: #0059ff;
+    font: normal 9pt sans-serif;
+    margin: 28px 178px;
+    cursor: pointer;
+}
+
+.txtsugestao {
+    font: bold 10pt sans-serif;
+    color: #a5a5a5;
+    margin-bottom: 30px;
+}
+
+.perfilsugest {
+    display: flex;
+    margin-top: -20px;
+}
+.sugestprofile2 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.seguir {
+    height: 20px;
+    color: #0059ff;
+    font: normal 9pt sans-serif;
+    margin: 28px 150px;
+    cursor: pointer;
+}
+
+.copy {
+    margin-top: -50px;
+    color: #696969;
+    font: normal 8.7pt sans-serif;
+    line-height: 20px;
+    text-transform: lowercase;
+}
+
+.copy .copyright {
+    margin-top: 10px;
+    text-transform: uppercase;
+    
+}
+
+@media (max-width: 1350px) {
+    .barlat {
+        width: 45px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 4px;
+    }
+
+    .logo2{
+        display: block;
+        margin-top: -10px;
+        margin-bottom: -20px;
+    }
+
+    .logo2 img {
+        width: 30px;
+    }
+
+    .change {
+        display: none;
+    }
+
 }
