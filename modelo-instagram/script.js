@@ -39,18 +39,22 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 //[FIM] Botões de avançar e retroceder story
 
+let option = document.querySelector('.windowcenter')
 function options() {
-    // let botao = document.querySelector('.cancel')
-    let option = document.querySelector('.windowcenter')
-        option.style.display = 'block'
+    option.style.display = 'block'
 
-        // botao.addEventListener(option.classList.toggle('active'))
+    // botao.addEventListener(option.classList.toggle('active'))
 
 }
 
 function cancelar() {
-        option.style.zIndex = ''
+    option.style.display = 'none'
 }
 
+// function mudar() {
+//     let image = document.querySelector('.image')
+//     let fotoPerfil = document.querySelector('.ftperf')
 
-
+//     image.style.background = '#5e5e5e'
+//     fotoPerfil.style.background = '#5e5e5e'
+// }

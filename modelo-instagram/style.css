@@ -276,6 +276,7 @@ header {
     width: 40px;
     height: 40px;
     position: relative;
+    cursor: pointer;
 }
 
 .ftperf::before {
@@ -296,8 +297,6 @@ header {
     font-size: 22pt;
     cursor: pointer;
 }
-
-
 
 .postagem {
     width: 540px;
@@ -336,7 +335,6 @@ header {
 
 .salva img {
     width: 25px;
-
 }
 
 .curtida {
@@ -402,6 +400,7 @@ header {
 .nomeperf2 {
     margin: 15px 18px;
     cursor: pointer;
+    font: bold 10pt sans-serif;
 }
 
 .nomeperf3 {
@@ -409,18 +408,21 @@ header {
     margin: 15px 0 0 5px;
     overflow: hidden;
     cursor: pointer;
+    font: bold 10pt sans-serif;
 }
 
 .subnome {
     color: #8b8b8b;
     font: normal 10pt sans-serif;
     margin: 35px -92px;
+    font: normal 10pt sans-serif;
 }
 
 .subnome2 {
     color: #8b8b8b;
     font: normal 10pt sans-serif;
     margin: 36px -100px;
+    font: normal 10pt sans-serif;
 }
 
 .ownprofile img{
@@ -475,7 +477,7 @@ header {
 
 .perfilsugest {
     display: flex;
-    margin-top: -20px;
+    margin-top: -28px;
 }
 .sugestprofile2 {
     width: 45px;
