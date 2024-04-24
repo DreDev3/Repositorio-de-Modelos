@@ -51,10 +51,10 @@ function cancelar() {
     option.style.display = 'none'
 }
 
-// function mudar() {
-//     let image = document.querySelector('.image')
-//     let fotoPerfil = document.querySelector('.ftperf')
+/*function mudar() {
+    let image = document.querySelector('.image')
+    let fotoPerfil = document.querySelector('.ftperf')
 
-//     image.style.background = '#5e5e5e'
-//     fotoPerfil.style.background = '#5e5e5e'
-// }
+    image.style.background = '#5e5e5e'
+    fotoPerfil.style.background = '#5e5e5e'
+ }*/
