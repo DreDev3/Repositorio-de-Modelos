@@ -1,6 +1,6 @@
 //Botões de avançar e retroceder story
+var container = document.getElementById('scrollContainer');
 function checkScroll() {
-    var container = document.getElementById('scrollContainer');
     var scrollLeft = container.scrollLeft;
     var scrollRight = container.scrollWidth - container.clientWidth - scrollLeft;
 
@@ -20,14 +20,12 @@ function checkScroll() {
     }
 }
 
-function scrollLeft() {
-    var container = document.getElementById('scrollContainer');
+function scrollleft() {
     container.scrollLeft -= 660;
     checkScroll();
 }
 
 function scrollRight() {
-    var container = document.getElementById('scrollContainer');
     container.scrollLeft += 660;
     checkScroll();
 }
@@ -50,11 +48,3 @@ function options() {
 function cancelar() {
     option.style.display = 'none'
 }
-
-/*function mudar() {
-    let image = document.querySelector('.image')
-    let fotoPerfil = document.querySelector('.ftperf')
-
-    image.style.background = '#5e5e5e'
-    fotoPerfil.style.background = '#5e5e5e'
- }*/
